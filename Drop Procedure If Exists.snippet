@@ -33,7 +33,8 @@
 		<Code Language="SQL">
 			<![CDATA[IF EXISTS (SELECT * FROM [sys].[objects] WHERE [object_id] = OBJECT_ID('$SchemaName$.$storedprocname$', 'P'))
 	DROP PROCEDURE $SchemaName$.$storedprocname$
-; $end$]]>
+	GO
+	$end$]]>
 		</Code>
 	</Snippet>
 	</CodeSnippet>
